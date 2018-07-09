@@ -118,33 +118,33 @@ class IucnRedlist(object):
         if not self.api_token:
             return
         #  
-#         self.get_version()
+        self.get_version()
         #  
-#         self.get_chiroptera_species()
-#         #
+        self.get_chiroptera_species()
+        #
         self.get_chiroptera_info()
-#         #
-#         self.get_countries()
-#         #
-##        self.get_regions()
         #
-#         self.get_chiroptera_by_country()
+        self.get_countries()
         #
-##        self.get_chiroptera_by_region()
+#         self.get_regions()
+        #
+        self.get_chiroptera_by_country()
+        #
+#         self.get_chiroptera_by_region()
    
     def save_all(self, dirpath='.'):
         """ """
         #
-#         version_file = pathlib.Path(dirpath, 'redlist_version.txt') 
-#         with version_file.open('w') as file:
-#             file.write(self.version)
+        version_file = pathlib.Path(dirpath, 'redlist_version.txt') 
+        with version_file.open('w') as file:
+            file.write(self.version)
         #  
-#         checklist_file = pathlib.Path(dirpath, 'redlist_chiroptera_checklist.txt') 
-#         with checklist_file.open('w') as file:
-#             file.write('\t'.join(self.chiroptera_checklist_header) + '\r\n')
-#             for species_dict in self.chiroptera_dict.values():
-#                 file.write(species_dict['scientific_name'] + '\t' + 
-#                            str(species_dict['taxonid']) + '\r\n')
+        checklist_file = pathlib.Path(dirpath, 'redlist_chiroptera_checklist.txt') 
+        with checklist_file.open('w') as file:
+            file.write('\t'.join(self.chiroptera_checklist_header) + '\r\n')
+            for species_dict in self.chiroptera_dict.values():
+                file.write(species_dict['scientific_name'] + '\t' + 
+                           str(species_dict['taxonid']) + '\r\n')
         #  
         info_file = pathlib.Path(dirpath, 'redlist_chiroptera_info.txt') 
         with info_file.open('w') as file:
@@ -159,11 +159,11 @@ class IucnRedlist(object):
                     row.append(value)
                 file.write('\t'.join(row) + '\r\n')
         #
-#         country_file = pathlib.Path(dirpath, 'redlist_countries.txt') 
-#         with country_file.open('w') as file:
-#             file.write('\t'.join(self.country_header) + '\r\n')
-#             for key in sorted(self.country_dict.keys()):
-#                 file.write(key +'\t' + self.country_dict[key] + '\r\n')
+        country_file = pathlib.Path(dirpath, 'redlist_countries.txt') 
+        with country_file.open('w') as file:
+            file.write('\t'.join(self.country_header) + '\r\n')
+            for key in sorted(self.country_dict.keys()):
+                file.write(key +'\t' + self.country_dict[key] + '\r\n')
         #
 #         region_file = pathlib.Path(dirpath, 'redlist_regions.txt') 
 #         with region_file.open('w') as file:
@@ -171,12 +171,12 @@ class IucnRedlist(object):
 #             for key in sorted(self.region_dict.keys()):
 #                 file.write(key + '\t' + self.region_dict[key] + '\r\n')
         #
-#         self.get_chiroptera_by_country()
-#         country_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_countries.txt') 
-#         with country_file.open('w') as file:
-#             file.write('\t'.join(self.chiroptera_by_country_header) + '\r\n')
-#             for fields in self.chiroptera_by_country_list:
-#                 file.write('\t'.join(fields) + '\r\n')
+        self.get_chiroptera_by_country()
+        country_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_countries.txt') 
+        with country_file.open('w') as file:
+            file.write('\t'.join(self.chiroptera_by_country_header) + '\r\n')
+            for fields in self.chiroptera_by_country_list:
+                file.write('\t'.join(fields) + '\r\n')
         #
 #         self.get_chiroptera_by_region()
 #         region_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_regions.txt') 
@@ -213,7 +213,7 @@ class IucnRedlist(object):
                         self.country_dict[parts[0]] = parts[1]
         
         # Countries and species match list.
-        self.region_dict = {}
+        self.chiroptera_by_country_list = {}
         version_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_countries.txt') 
         with version_file.open('r') as file:
             for index, row in enumerate(file):
@@ -410,13 +410,13 @@ class IucnRedlist(object):
                     
 
 
-### Test. ###
+### Main. ###
 if __name__ == "__main__":
     """ """
-    redlist = IucnRedlist(api_token='<TOKEN>', # Replace with your token.
+    redlist = IucnRedlist(api_token='', # Replace with your token.
                           debug = True)
     
-    redlist.load_all()
+#     redlist.load_all()
     
     redlist.get_all()
     
