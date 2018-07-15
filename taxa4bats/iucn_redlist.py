@@ -7,6 +7,7 @@
 import pathlib 
 import json
 import urllib.request
+import xlsxwriter
 
 class IucnRedlist(object):
     """ """
@@ -38,6 +39,15 @@ class IucnRedlist(object):
     
     def define_headers(self):
         """ """
+        self.chiroptera_summary_header = [
+            'family',   
+            'genus', 
+            'scientific_name', 
+            'main_common_name', 
+            'category', 
+            'countries', 
+            ]
+        #
         self.chiroptera_checklist_header = [
             'scientific_name', 
             'taxonid', 
@@ -105,10 +115,6 @@ class IucnRedlist(object):
         """ """ 
         return self.country_dict
     
-#     def region_dict(self):
-#         """ """ 
-#         return self.region_dict
-    
     def chiroptera_by_country_list(self):
         """ """
         return self.chiroptera_by_country_list
@@ -126,11 +132,7 @@ class IucnRedlist(object):
         #
         self.get_countries()
         #
-#         self.get_regions()
-        #
         self.get_chiroptera_by_country()
-        #
-#         self.get_chiroptera_by_region()
    
     def save_all(self, dirpath='.'):
         """ """
@@ -165,25 +167,11 @@ class IucnRedlist(object):
             for key in sorted(self.country_dict.keys()):
                 file.write(key +'\t' + self.country_dict[key] + '\r\n')
         #
-#         region_file = pathlib.Path(dirpath, 'redlist_regions.txt') 
-#         with region_file.open('w') as file:
-#             file.write('\t'.join(self.region_header) + '\r\n')
-#             for key in sorted(self.region_dict.keys()):
-#                 file.write(key + '\t' + self.region_dict[key] + '\r\n')
-        #
-        self.get_chiroptera_by_country()
         country_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_countries.txt') 
         with country_file.open('w') as file:
             file.write('\t'.join(self.chiroptera_by_country_header) + '\r\n')
             for fields in self.chiroptera_by_country_list:
                 file.write('\t'.join(fields) + '\r\n')
-        #
-#         self.get_chiroptera_by_region()
-#         region_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_regions.txt') 
-#         with region_file.open('w') as file:
-#             file.write('\t'.join(self.chiroptera_by_region_header) + '\r\n')
-#             for fields in self.chiroptera_by_region_list:
-#                 file.write('\t'.join(fields) + '\r\n')
    
     def load_all(self, dirpath='.'):
         """ """ 
@@ -202,6 +190,19 @@ class IucnRedlist(object):
                     if len(parts) > 1:
                         self.chiroptera_checklist[parts[0]] = int(parts[1]) # taxonid
         
+        # Chiroptera info.
+        self.chiroptera_checklist = {} 
+        info_file = pathlib.Path(dirpath, 'redlist_chiroptera_info.txt') 
+        with info_file.open('r') as file:
+            for index, row in enumerate(file):
+                if index == 0:
+                    header = row.strip().split('\t')
+                else:
+                    parts = row.strip().split('\t')
+                    species_dict = dict(zip(header, parts))
+                    if len(parts) > 1:
+                        self.chiroptera_info_dict[parts[0]] = species_dict
+        
         # Available countries.
         self.country_dict = {}
         version_file = pathlib.Path(dirpath, 'redlist_countries.txt') 
@@ -213,7 +214,7 @@ class IucnRedlist(object):
                         self.country_dict[parts[0]] = parts[1]
         
         # Countries and species match list.
-        self.chiroptera_by_country_list = {}
+        self.chiroptera_by_country_list = []
         version_file = pathlib.Path(dirpath, 'redlist_chiroptera_by_countries.txt') 
         with version_file.open('r') as file:
             for index, row in enumerate(file):
@@ -344,83 +345,169 @@ class IucnRedlist(object):
                                                                     row_dict['scientific_name'], 
                                                                     row_dict['category']))
 
-#
-# === Regions does not work as expected.  Chiroptera not included. ===
-#
-#     def get_regions(self):
-#         """ Get IUCN list of regions. """ 
-#         # http://apiv3.iucnredlist.org/api/v3/country/list?token=<YOUR TOKEN>   
-#         url = 'http://apiv3.iucnredlist.org/api/v3/region/list' + \
-#               '?token=' + self.api_token
-#         with urllib.request.urlopen(url) as response:  
-#             response_binary = response.read()
-#             if response_binary:
-#                 response_json = json.loads(response_binary.decode('utf-8'))
-#                 if response_json.get('count', 0) > 0:
-#                     for row_dict in response_json.get('results', []):
-#                         self.region_count += 1
-#                         self.region_dict[row_dict['identifier']] = row_dict['name']
-#         #
-#         if self.debug:
-#             for key in self.region_dict.keys():
-#                 print('DEBUG: region: ' + key + '    name: ' + self.region_dict[key])
-#             print('DEBUG: Region count: ' + str(self.region_count))
-    
-#     def get_chiroptera_by_region(self):
-#         """ Iterate over regions and store Chiroptera species for each region. """    
-#         if not self.api_token:
-#             return
-#         checklist_taxonids = list(self.chiroptera_checklist.values())   
-# #         for region_id in self.region_dict.keys():
-#         for region_id in ['eastern_africa']: # TODO: For test only. 
-#             if self.debug:
-#                 print('DEBUG: Taxa in region: ' + region_id)
-#             #
-#             page_number = 0    
-#             while (page_number is not None) and (page_number < 100):
-#                 # http://apiv3.iucnredlist.org/api/v3/species/region/<region>/page/0?token=<YOUR TOKEN>  
-#                 url = 'http://apiv3.iucnredlist.org/api/v3/species/region/' + \
-#                       region_id + \
-#                       '/page/' + str(page_number) + \
-#                       '?token=' + self.api_token
-#                 with urllib.request.urlopen(url) as response:  
-#                     response_binary = response.read()
-#                     if not response_binary:
-#                         page_number = None
-#                     else:
-#                         response_json = json.loads(response_binary.decode('utf-8'))
-#                         
-#                         if self.debug:
-#                             print('Page: ', page_number, '   Count: ',  response_json.get('count', '-'))
-#                         
-#                         if response_json.get('count', 0) > 0:
-#                             for row_dict in response_json.get('result', []):
-#                                     taxonid = row_dict['taxonid']
-#                                     if taxonid in checklist_taxonids:
-#                                         self.chiroptera_by_region_count += 1
-#                                         self.chiroptera_by_region_list.append((region_id, 
-#                                                                                str(taxonid), 
-#                                                                                row_dict['scientific_name'], 
-#                                                                                row_dict['category']))
-#                         else:
-#                             page_number = None
-#                 #
-#                 if (page_number is not None):
-#                     page_number += 1
-                    
+    def create_excel(self, dirpath='.'):
+        """ Export to Excel. """
+        #
+        excel_filepathname = pathlib.Path(dirpath, 'redlist_chiroptera_' + self.redlist_version() + '.xlsx') 
+        # Create Excel document.
+        workbook = xlsxwriter.Workbook(str(excel_filepathname))
+        
+        # Add worksheets.
+        summary_worksheet = workbook.add_worksheet('Chiroptera summary')
+        info_worksheet = workbook.add_worksheet('Chiroptera info')
+        countries_worksheet = workbook.add_worksheet('Countries')
+        species_by_country_worksheet = workbook.add_worksheet('Chiroptera by country')
+        citation_worksheet = workbook.add_worksheet('Citation')
+        about_worksheet = workbook.add_worksheet('About')
+        
+        # Create cell formats.
+        self.bold_format = workbook.add_format({'bold': True})
+        
+        # === Sheet: Chiroptera summary. ===
+        # Header.
+        summary_worksheet.write_row(0, 0, self.chiroptera_summary_header, self.bold_format)
+        # Rows.
+        row_nr = 1
+        for key in sorted(self.chiroptera_info_dict.keys()):
+            species_dict = self.chiroptera_info_dict[key]
+            row = []
+            for item in self.chiroptera_summary_header:
+                value = str(species_dict.get(item, ''))
+                if value == 'None':
+                    value = ''
+                elif item == 'family':
+                    value = value.capitalize()
+                elif item == 'countries':
+                    countries = []
+                    taxonid = species_dict.get('taxonid', '')
+                    for country_row in self.chiroptera_by_country_list:
+                        if country_row[1] == taxonid:
+                            countries.append(country_row[0])
+                    value = ', '.join(sorted(countries))
+                #
+                row.append(value)
+            #
+            summary_worksheet.write_row(row_nr, 0, row)
+            row_nr += 1
+       
+        # === Sheet: Chiroptera info. ===
+        # Header.
+        info_worksheet.write_row(0, 0, self.chiroptera_info_header, self.bold_format)
+        # Rows.
+        row_nr = 1
+        for key in sorted(self.chiroptera_info_dict.keys()):
+            species_dict = self.chiroptera_info_dict[key]
+            row = []
+            for item in self.chiroptera_info_header:
+                value = str(species_dict.get(item, ''))
+                if value == 'None':
+                    value = ''
+                row.append(value)
+            #
+            info_worksheet.write_row(row_nr, 0, row)
+            row_nr += 1
+               
+        # === Sheet: Countries. ===
+        # Header.
+        countries_worksheet.write_row(0, 0, self.country_header, self.bold_format)
+        # Rows.
+        row_nr = 1
+        for key in sorted(self.country_dict.keys()):
+            countries_worksheet.write_row(row_nr, 0, [key, self.country_dict[key]])
+            row_nr += 1
+        
+        # === Sheet: Chiroptera by country. ===
+        # Header.
+        species_by_country_worksheet.write_row(0, 0, self.chiroptera_by_country_header, self.bold_format)
+        # Rows.
+        row_nr = 1
+        for row in sorted(self.chiroptera_by_country_list):
+            species_by_country_worksheet.write_row(row_nr, 0, row)
+            row_nr += 1
+               
+        # === Sheet: Citation. ===
+        # Header.
+        citation_worksheet.write_row(0, 0, ['IUCN Redlist citation'], self.bold_format)
+        # Rows.
+        readme_text = [
+            [''],
+            ['IUCN Redlist citation:'],
+            [''],
+            ['    ' + self.redlist_citation()],
+            [''],
+            ]
+        #
+        row_nr = 1
+        for row in readme_text:
+            citation_worksheet.write_row(row_nr, 0, row)
+            row_nr += 1
+        
+        # === Sheet: Source code. ===
+        # Header.
+        about_worksheet.write_row(0, 0, ['About'], self.bold_format)
+        # Rows.
+        readme_text = [
+            [''],
+            ['This Excel file is a part of the open source '],
+            ['project CloudedBats.org: http://cloudedbats.org '],
+            [''],
+            ['Source code to generate the Excel file can be '],
+            ['found in this GitHub repository: '],
+            ['- https://github.com/cloudedbats/cloudedbats_species '],
+            [''],
+            ['Notes: '],
+            ['- You must ask IUCN for a personal token to access '],
+            ['  their API: http://apiv3.iucnredlist.org/api/v3/token '],
+            ['- Commercial use of the Red List API is not allowed. '],
+            ['- Do not forget the acknowledgement and citation text '],
+            ['  when using it. '],
+            [''],
+            ]
+        #
+        row_nr = 1
+        for row in readme_text:
+            about_worksheet.write_row(row_nr, 0, row)
+            row_nr += 1
+        
+        # === Adjust column width. ===
+        summary_worksheet.set_column('A:B', 20)
+        summary_worksheet.set_column('C:D', 40)
+        summary_worksheet.set_column('E:E', 10)
+        summary_worksheet.set_column('F:F', 40)
+        
+        info_worksheet.set_column('A:A', 40)
+        
+        countries_worksheet.set_column('A:A', 20)
+        countries_worksheet.set_column('B:B', 40)
+        
+        species_by_country_worksheet.set_column('A:B', 20)
+        species_by_country_worksheet.set_column('C:C', 40)
+        species_by_country_worksheet.set_column('D:D', 20)
+        
+        
+        citation_worksheet.set_column('A:A', 100)
+        about_worksheet.set_column('A:A', 100)
+        
+        # === Done. Close the Excel document. ===
+        workbook.close()
+
 
 
 ### Main. ###
 if __name__ == "__main__":
     """ """
-    redlist = IucnRedlist(api_token='', # Replace with your token.
+    redlist = IucnRedlist(api_token='<TOKEN>', # Replace with your token.
                           debug = True)
     
-#     redlist.load_all()
+    get_from_iucn = False
     
-    redlist.get_all()
+    if get_from_iucn:
+        redlist.get_all()
+        redlist.save_all()
+    else:
+        redlist.load_all()
     
-    redlist.save_all()
+    redlist.create_excel()
     
     print(redlist.redlist_citation())
     
