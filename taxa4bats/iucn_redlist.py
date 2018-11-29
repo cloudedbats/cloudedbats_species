@@ -134,8 +134,11 @@ class IucnRedlist(object):
         #
         self.get_chiroptera_by_country()
    
-    def save_all(self, dirpath='.'):
+    def save_all(self, dirpath='data'):
         """ """
+        #
+        if not pathlib.Path(dirpath).exists():
+            pathlib.Path(dirpath).mkdir()
         #
         version_file = pathlib.Path(dirpath, 'redlist_version.txt') 
         with version_file.open('w') as file:
@@ -173,7 +176,7 @@ class IucnRedlist(object):
             for fields in self.chiroptera_by_country_list:
                 file.write('\t'.join(fields) + '\r\n')
    
-    def load_all(self, dirpath='.'):
+    def load_all(self, dirpath='data'):
         """ """ 
         # Version.
         version_file = pathlib.Path(dirpath, 'redlist_version.txt') 
@@ -496,17 +499,25 @@ class IucnRedlist(object):
 ### Main. ###
 if __name__ == "__main__":
     """ """
-    redlist = IucnRedlist(api_token='<TOKEN>', # Replace with your token.
+
+    token = '<TOKEN>', # Replace with your token.
+
+    redlist = IucnRedlist(api_token=token, 
                           debug = True)
-    
-    get_from_iucn = False
-    
-    if get_from_iucn:
+    if len(token) > 10: 
+        # Update from IUCN Red list. This will take some time
+        # since all taxa must be checked to find out if they
+        # belongs to Chiroptera.
         redlist.get_all()
         redlist.save_all()
     else:
+        # Load from cache if token not given.
         redlist.load_all()
+
+
+    redlist.save_all()
     
+
     redlist.create_excel()
     
     print(redlist.redlist_citation())
