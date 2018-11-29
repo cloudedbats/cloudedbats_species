@@ -6,7 +6,7 @@ This is a part of CloudedBats: http://cloudedbats.org
 
 The software library taxa4bats contains taxonomic information for bats (Chiroptera). All data is collected from the IUCN Red List of Threatened Species (https://www.iucnredlist.org) since in covers most of the bats that exists, and the species lists are maintained with two or three published updates each year.
 
-When running the Python script /taxa4bats/iucn_redlist.py the API at IUCN Redlist is called and all relevant information for bats is downloaded. The data is then stored in text files as a cache for usage between the published updates. An Excel file is also generated that can be downloaded separately. Note that you need to ask for a Token before you can run the script by yourself. It's free, but they don't like commercial use without written permission.
+When running the Python script [/taxa4bats/iucn_redlist.py](/taxa4bats/iucn_redlist.py) the API at IUCN Redlist is called and all relevant information for bats is downloaded. The data is then stored in text files as a cache for usage between the published updates. An Excel file is also generated that can be downloaded separately. Note that you need to ask for a Token before you can run the script by yourself. It's free, but they don't like commercial use without written permission.
 
 The main usage for taxa4bats is to serve cloudedbats_desktop_app and cloudedbats_web with taxonomic information. 
 
