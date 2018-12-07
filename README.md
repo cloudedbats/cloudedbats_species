@@ -14,6 +14,9 @@ But the Excel file can be used directly. It's really good if you want to check t
 
 Download the Excel file here: [redlist_chiroptera_2018-2.xlsx](/taxa4bats/redlist_chiroptera_2018-2.xlsx) 
 
+![WURB-A001](CloudedBats_IUCN-Redlist_Excel.png?raw=true  "Swedish species filtered in LibreOffice Calc.")
+Swedish species filtered in LibreOffice Calc. CloudedBats.org / [CC-BY](https://creativecommons.org/licenses/by/3.0/)
+
 ## Contact
 
 Arnold Andreasson, Sweden.
