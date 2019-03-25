@@ -2517,8 +2517,9 @@ GY	8246	Eumops maurus	DD
 GY	87994060	Eumops nanus	LC
 GY	136809	Eumops trumbulli	LC
 GY	8771	Furipterus horrens	LC
+GY	13560	Gardnerycteris crenulatum	LC
 GY	9273	Glossophaga commissarisi	LC
-GY	9275	Glossophaga longirostris	DD
+GY	9275	Glossophaga longirostris	LC
 GY	9277	Glossophaga soricina	LC
 GY	13377	Glyphonycteris daviesi	LC
 GY	13384	Glyphonycteris sylvestris	LC
@@ -2526,7 +2527,6 @@ GY	13376	Lampronycteris brachyotis	LC
 GY	29607	Lasiurus atratus	LC
 GY	88151055	Lasiurus blossevillii	LC
 GY	11350	Lasiurus ega	LC
-GY	11966	Lichonycteris obscura	LC
 GY	12078	Lionycteris spurrelli	LC
 GY	12269	Lonchophylla thomasi	LC
 GY	12270	Lonchorhina aurita	LC
@@ -2542,7 +2542,6 @@ GY	13379	Micronycteris megalotis	LC
 GY	136424	Micronycteris microtis	LC
 GY	13380	Micronycteris minuta	LC
 GY	13559	Mimon bennettii	LC
-GY	13560	Mimon crenulatum	LC
 GY	13640	Molossops mattogrossensis	LC
 GY	13641	Molossops neglectus	DD
 GY	13643	Molossops temminckii	LC
@@ -2587,7 +2586,6 @@ GY	19807	Saccopteryx leptura	LC
 GY	20960	Sturnira tildae	LC
 GY	21314	Tadarida brasiliensis	LC
 GY	136594	Thyroptera devivoi	DD
-GY	21877	Thyroptera discifera	LC
 GY	21879	Thyroptera tricolor	LC
 GY	41530	Tonatia saurophila	LC
 GY	22029	Trachops cirrhosus	LC
@@ -2632,6 +2630,7 @@ GF	8241	Eumops auripendulus	LC
 GF	8245	Eumops hansae	LC
 GF	136809	Eumops trumbulli	LC
 GF	8771	Furipterus horrens	LC
+GF	13560	Gardnerycteris crenulatum	LC
 GF	9277	Glossophaga soricina	LC
 GF	13377	Glyphonycteris daviesi	LC
 GF	13384	Glyphonycteris sylvestris	LC
@@ -2639,7 +2638,6 @@ GF	13376	Lampronycteris brachyotis	LC
 GF	29607	Lasiurus atratus	LC
 GF	88151055	Lasiurus blossevillii	LC
 GF	11351	Lasiurus egregius	DD
-GF	11966	Lichonycteris obscura	LC
 GF	12078	Lionycteris spurrelli	LC
 GF	12269	Lonchophylla thomasi	LC
 GF	12270	Lonchorhina aurita	LC
@@ -2657,7 +2655,6 @@ GF	136424	Micronycteris microtis	LC
 GF	13380	Micronycteris minuta	LC
 GF	13383	Micronycteris schmidtorum	LC
 GF	13559	Mimon bennettii	LC
-GF	13560	Mimon crenulatum	LC
 GF	13641	Molossops neglectus	DD
 GF	102208365	Molossus coibensis	LC
 GF	13648	Molossus molossus	LC
@@ -2738,6 +2735,7 @@ SR	8241	Eumops auripendulus	LC
 SR	8246	Eumops maurus	DD
 SR	136809	Eumops trumbulli	LC
 SR	8771	Furipterus horrens	LC
+SR	13560	Gardnerycteris crenulatum	LC
 SR	9277	Glossophaga soricina	LC
 SR	13377	Glyphonycteris daviesi	LC
 SR	13384	Glyphonycteris sylvestris	LC
@@ -2745,7 +2743,6 @@ SR	13376	Lampronycteris brachyotis	LC
 SR	29607	Lasiurus atratus	LC
 SR	88151055	Lasiurus blossevillii	LC
 SR	11350	Lasiurus ega	LC
-SR	11966	Lichonycteris obscura	LC
 SR	12078	Lionycteris spurrelli	LC
 SR	12269	Lonchophylla thomasi	LC
 SR	12270	Lonchorhina aurita	LC
@@ -2760,7 +2757,6 @@ SR	13378	Micronycteris hirsuta	LC
 SR	13379	Micronycteris megalotis	LC
 SR	13380	Micronycteris minuta	LC
 SR	13559	Mimon bennettii	LC
-SR	13560	Mimon crenulatum	LC
 SR	13641	Molossops neglectus	DD
 SR	13648	Molossus molossus	LC
 SR	13650	Molossus sinaloae	LC
@@ -2883,6 +2879,7 @@ PY	22841	Vampyressa pusilla	DD
 PE	1154	Amorphochilus schnablii	VU
 PE	88108473	Anoura caudifer	LC
 PE	1566	Anoura cultrata	LC
+PE	136239	Anoura fistulata	DD
 PE	88109511	Anoura geoffroyi	LC
 PE	1568	Anoura latidens	LC
 PE	2125	Artibeus concolor	LC
@@ -2924,6 +2921,7 @@ PE	7916	Eptesicus brasiliensis	LC
 PE	7927	Eptesicus furinalis	LC
 PE	7932	Eptesicus innoxius	NT
 PE	8241	Eumops auripendulus	LC
+PE	87993965	Eumops delticus	DD
 PE	87994083	Eumops glaucinus	LC
 PE	8245	Eumops hansae	LC
 PE	8246	Eumops maurus	DD
@@ -2931,6 +2929,8 @@ PE	87994060	Eumops nanus	LC
 PE	8247	Eumops perotis	LC
 PE	87993523	Eumops wilsoni	DD
 PE	8771	Furipterus horrens	LC
+PE	13560	Gardnerycteris crenulatum	LC
+PE	136266	Gardnerycteris koepckeae	DD
 PE	9273	Glossophaga commissarisi	LC
 PE	9277	Glossophaga soricina	LC
 PE	13375	Glyphonycteris behnii	DD
@@ -2942,10 +2942,10 @@ PE	10203	Histiotus velatus	DD
 PE	13376	Lampronycteris brachyotis	LC
 PE	88151055	Lasiurus blossevillii	LC
 PE	11350	Lasiurus ega	LC
-PE	11966	Lichonycteris obscura	LC
 PE	12078	Lionycteris spurrelli	LC
 PE	12265	Lonchophylla handleyi	LC
 PE	12266	Lonchophylla hesperia	NT
+PE	88149229	Lonchophylla pattoni	DD
 PE	12268	Lonchophylla robusta	LC
 PE	12269	Lonchophylla thomasi	LC
 PE	12270	Lonchorhina aurita	LC
@@ -2961,8 +2961,6 @@ PE	136207	Micronycteris matses	DD
 PE	13379	Micronycteris megalotis	LC
 PE	13380	Micronycteris minuta	LC
 PE	13383	Micronycteris schmidtorum	LC
-PE	13560	Mimon crenulatum	LC
-PE	136266	Mimon koepckeae	DD
 PE	13643	Molossops temminckii	LC
 PE	102208365	Molossus coibensis	LC
 PE	13648	Molossus molossus	LC
@@ -3012,7 +3010,7 @@ PE	19714	Rhynchonycteris naso	LC
 PE	19804	Saccopteryx bilineata	LC
 PE	19805	Saccopteryx canescens	LC
 PE	19807	Saccopteryx leptura	LC
-PE	20599	Sphaeronycteris toxophyllum	DD
+PE	20599	Sphaeronycteris toxophyllum	LC
 PE	20949	Sturnira aratathomasi	LC
 PE	20950	Sturnira bidens	LC
 PE	20951	Sturnira bogotensis	LC
@@ -3044,7 +3042,6 @@ VG	2982	Brachyphylla cavernarum	LC
 VG	14830	Noctilio leporinus	LC
 VG	21314	Tadarida brasiliensis	LC
 VI	2982	Brachyphylla cavernarum	LC
-VI	9275	Glossophaga longirostris	DD
 VI	14830	Noctilio leporinus	LC
 VI	20743	Stenoderma rufum	NT
 VI	21314	Tadarida brasiliensis	LC
@@ -3062,7 +3059,6 @@ GP	18705	Pteronotus davyi	LC
 GP	21314	Tadarida brasiliensis	LC
 HT	88109731	Artibeus jamaicensis	LC
 HT	2983	Brachyphylla nana	LC
-HT	14359	Chilonatalus micropus	NT
 HT	7928	Eptesicus fuscus	LC
 HT	136247	Erophylla bombifrons	LC
 HT	136627	Lasiurus minor	VU
@@ -3119,6 +3115,7 @@ VC	88109731	Artibeus jamaicensis	LC
 VC	2136	Artibeus lituratus	LC
 VC	88109897	Artibeus schwartzi	DD
 VC	2982	Brachyphylla cavernarum	LC
+VC	9275	Glossophaga longirostris	LC
 VC	88120333	Micronycteris buriri	DD
 VC	13719	Monophyllus plethodon	LC
 VC	14830	Noctilio leporinus	LC
@@ -3136,6 +3133,7 @@ BB	14830	Noctilio leporinus	LC
 BB	21314	Tadarida brasiliensis	LC
 BM	11339	Lasionycteris noctivagans	LC
 BM	11347	Lasiurus borealis	LC
+BM	13719	Monophyllus plethodon	LC
 KY	2983	Brachyphylla nana	LC
 KY	8033	Erophylla sezekorni	LC
 KY	12653	Macrotus waterhousii	LC
@@ -3144,7 +3142,6 @@ KY	21314	Tadarida brasiliensis	LC
 CU	1790	Antrozous pallidus	LC
 CU	88109731	Artibeus jamaicensis	LC
 CU	2983	Brachyphylla nana	LC
-CU	14359	Chilonatalus micropus	NT
 CU	7928	Eptesicus fuscus	LC
 CU	8033	Erophylla sezekorni	LC
 CU	136754	Lasiurus insularis	VU
@@ -3178,7 +3175,7 @@ DM	18705	Pteronotus davyi	LC
 DM	21314	Tadarida brasiliensis	LC
 DO	88109731	Artibeus jamaicensis	LC
 DO	2983	Brachyphylla nana	LC
-DO	14359	Chilonatalus micropus	NT
+DO	88088852	Chilonatalus micropus	VU
 DO	7928	Eptesicus fuscus	LC
 DO	136247	Erophylla bombifrons	LC
 DO	136627	Lasiurus minor	VU
@@ -3198,7 +3195,7 @@ GD	88109731	Artibeus jamaicensis	LC
 GD	2136	Artibeus lituratus	LC
 GD	88109897	Artibeus schwartzi	DD
 GD	83683065	Dermanura glauca	LC
-GD	9275	Glossophaga longirostris	DD
+GD	9275	Glossophaga longirostris	LC
 GD	9277	Glossophaga soricina	LC
 GD	14185	Myotis nigricans	LC
 GD	76435059	Myotis nyctor	VU
@@ -3223,7 +3220,8 @@ TT	6561	Diclidurus albus	LC
 TT	7916	Eptesicus brasiliensis	LC
 TT	8241	Eumops auripendulus	LC
 TT	8771	Furipterus horrens	LC
-TT	9275	Glossophaga longirostris	DD
+TT	13560	Gardnerycteris crenulatum	LC
+TT	9275	Glossophaga longirostris	LC
 TT	9277	Glossophaga soricina	LC
 TT	13377	Glyphonycteris daviesi	LC
 TT	13384	Glyphonycteris sylvestris	LC
@@ -3236,7 +3234,6 @@ TT	13240	Mesophylla macconnelli	LC
 TT	13378	Micronycteris hirsuta	LC
 TT	13379	Micronycteris megalotis	LC
 TT	13380	Micronycteris minuta	LC
-TT	13560	Mimon crenulatum	LC
 TT	13648	Molossus molossus	LC
 TT	13644	Molossus rufus	LC
 TT	13650	Molossus sinaloae	LC
@@ -3284,7 +3281,7 @@ AG	14360	Natalus stramineus	LC
 AG	14830	Noctilio leporinus	LC
 AG	21314	Tadarida brasiliensis	LC
 AW	88109731	Artibeus jamaicensis	LC
-AW	9275	Glossophaga longirostris	DD
+AW	9275	Glossophaga longirostris	LC
 AW	11699	Leptonycteris curasoae	VU
 AW	14830	Noctilio leporinus	LC
 AW	136790	Peropteryx trinitatis	DD
@@ -3304,7 +3301,7 @@ BS	18710	Pteronotus quadridens	LC
 JM	2110	Ariteus flavescens	LC
 JM	88109731	Artibeus jamaicensis	LC
 JM	2983	Brachyphylla nana	LC
-JM	14359	Chilonatalus micropus	NT
+JM	88088852	Chilonatalus micropus	VU
 JM	7928	Eptesicus fuscus	LC
 JM	8033	Erophylla sezekorni	LC
 JM	8241	Eumops auripendulus	LC
@@ -5692,6 +5689,7 @@ GT	7927	Eptesicus furinalis	LC
 GT	7928	Eptesicus fuscus	LC
 GT	8241	Eumops auripendulus	LC
 GT	8248	Eumops underwoodi	LC
+GT	13560	Gardnerycteris crenulatum	LC
 GT	9273	Glossophaga commissarisi	LC
 GT	9274	Glossophaga leachii	LC
 GT	10598	Hylonycteris underwoodi	LC
@@ -5701,7 +5699,7 @@ GT	11345	Lasiurus cinereus	LC
 GT	11350	Lasiurus ega	LC
 GT	11352	Lasiurus intermedius	LC
 GT	136659	Leptonycteris yerbabuenae	NT
-GT	11966	Lichonycteris obscura	LC
+GT	88120245	Lichonycteris obscura	LC
 GT	12270	Lonchorhina aurita	LC
 GT	21984	Lophostoma brasiliense	LC
 GT	21986	Lophostoma evotis	LC
@@ -5710,7 +5708,6 @@ GT	12653	Macrotus waterhousii	LC
 GT	136424	Micronycteris microtis	LC
 GT	13383	Micronycteris schmidtorum	LC
 GT	136561	Mimon cozumelae	LC
-GT	13560	Mimon crenulatum	LC
 GT	13645	Molossus aztecus	LC
 GT	102208365	Molossus coibensis	LC
 GT	13644	Molossus rufus	LC
@@ -5729,12 +5726,12 @@ GT	136363	Natalus mexicanus	LC
 GT	14829	Noctilio albiventris	LC
 GT	14830	Noctilio leporinus	LC
 GT	14995	Nyctinomops laticaudatus	LC
+GT	17366	Perimyotis subflavus	VU
 GT	16707	Peropteryx kappleri	LC
 GT	16709	Peropteryx macrotis	LC
 GT	17168	Phylloderma stenops	LC
 GT	17216	Phyllostomus discolor	LC
 GT	17218	Phyllostomus hastatus	LC
-GT	17366	Pipistrellus subflavus	LC
 GT	88159886	Platyrrhinus helleri	LC
 GT	18340	Promops centralis	LC
 GT	18705	Pteronotus davyi	LC
@@ -5779,6 +5776,7 @@ BZ	7927	Eptesicus furinalis	LC
 BZ	7928	Eptesicus fuscus	LC
 BZ	87994060	Eumops nanus	LC
 BZ	8248	Eumops underwoodi	LC
+BZ	13560	Gardnerycteris crenulatum	LC
 BZ	9273	Glossophaga commissarisi	LC
 BZ	9277	Glossophaga soricina	LC
 BZ	10598	Hylonycteris underwoodi	LC
@@ -5786,7 +5784,7 @@ BZ	13376	Lampronycteris brachyotis	LC
 BZ	88151055	Lasiurus blossevillii	LC
 BZ	11350	Lasiurus ega	LC
 BZ	11352	Lasiurus intermedius	LC
-BZ	11966	Lichonycteris obscura	LC
+BZ	88120245	Lichonycteris obscura	LC
 BZ	12270	Lonchorhina aurita	LC
 BZ	21984	Lophostoma brasiliense	LC
 BZ	21986	Lophostoma evotis	LC
@@ -5795,7 +5793,6 @@ BZ	12653	Macrotus waterhousii	LC
 BZ	136424	Micronycteris microtis	LC
 BZ	13383	Micronycteris schmidtorum	LC
 BZ	136561	Mimon cozumelae	LC
-BZ	13560	Mimon crenulatum	LC
 BZ	13648	Molossus molossus	LC
 BZ	13644	Molossus rufus	LC
 BZ	13650	Molossus sinaloae	LC
@@ -5807,11 +5804,11 @@ BZ	136363	Natalus mexicanus	LC
 BZ	14829	Noctilio albiventris	LC
 BZ	14830	Noctilio leporinus	LC
 BZ	14995	Nyctinomops laticaudatus	LC
+BZ	17366	Perimyotis subflavus	VU
 BZ	16707	Peropteryx kappleri	LC
 BZ	16709	Peropteryx macrotis	LC
 BZ	17168	Phylloderma stenops	LC
 BZ	17216	Phyllostomus discolor	LC
-BZ	17366	Pipistrellus subflavus	LC
 BZ	88159886	Platyrrhinus helleri	LC
 BZ	18340	Promops centralis	LC
 BZ	18705	Pteronotus davyi	LC
@@ -5834,6 +5831,7 @@ SV	2132	Artibeus inopinatus	DD
 SV	88109731	Artibeus jamaicensis	LC
 SV	2136	Artibeus lituratus	LC
 SV	2533	Balantiopteryx plicata	LC
+SV	1789	Bauerus dubiaquercus	NT
 SV	3905	Carollia perspicillata	LC
 SV	136268	Carollia sowelli	LC
 SV	3906	Carollia subrufa	LC
@@ -5936,6 +5934,7 @@ PA	8241	Eumops auripendulus	LC
 PA	8245	Eumops hansae	LC
 PA	87994060	Eumops nanus	LC
 PA	8771	Furipterus horrens	LC
+PA	13560	Gardnerycteris crenulatum	LC
 PA	9273	Glossophaga commissarisi	LC
 PA	9277	Glossophaga soricina	LC
 PA	13377	Glyphonycteris daviesi	LC
@@ -5947,7 +5946,7 @@ PA	11348	Lasiurus castaneus	DD
 PA	11345	Lasiurus cinereus	LC
 PA	11350	Lasiurus ega	LC
 PA	11351	Lasiurus egregius	DD
-PA	11966	Lichonycteris obscura	LC
+PA	88120245	Lichonycteris obscura	LC
 PA	12078	Lionycteris spurrelli	LC
 PA	136706	Lonchophylla concava	LC
 PA	12268	Lonchophylla robusta	LC
@@ -5963,7 +5962,6 @@ PA	136424	Micronycteris microtis	LC
 PA	13380	Micronycteris minuta	LC
 PA	13383	Micronycteris schmidtorum	LC
 PA	136561	Mimon cozumelae	LC
-PA	13560	Mimon crenulatum	LC
 PA	88087507	Molossus bondae	LC
 PA	102208365	Molossus coibensis	LC
 PA	13648	Molossus molossus	LC
@@ -6106,8 +6104,10 @@ KR	136598	Plecotus ognevi	LC
 KR	19517	Rhinolophus ferrumequinum	LC
 KR	136716	Tadarida insignis	DD
 KR	22949	Vespertilio sinensis	LC
+MF	13719	Monophyllus plethodon	LC
 MF	14830	Noctilio leporinus	LC
 MF	21314	Tadarida brasiliensis	LC
+BL	13719	Monophyllus plethodon	LC
 BL	21314	Tadarida brasiliensis	LC
 AS	7669	Emballonura semicaudata	EN
 AS	18757	Pteropus samoensis	NT
@@ -6580,13 +6580,15 @@ BR	88151044	Eptesicus taddeii	DD
 BR	8241	Eumops auripendulus	LC
 BR	87993837	Eumops bonariensis	LC
 BR	8243	Eumops dabbenei	LC
+BR	87993965	Eumops delticus	DD
 BR	87994083	Eumops glaucinus	LC
 BR	8245	Eumops hansae	LC
 BR	8247	Eumops perotis	LC
 BR	136809	Eumops trumbulli	LC
 BR	8771	Furipterus horrens	LC
+BR	13560	Gardnerycteris crenulatum	LC
 BR	9273	Glossophaga commissarisi	LC
-BR	9275	Glossophaga longirostris	DD
+BR	9275	Glossophaga longirostris	LC
 BR	9277	Glossophaga soricina	LC
 BR	13375	Glyphonycteris behnii	DD
 BR	13377	Glyphonycteris daviesi	LC
@@ -6601,7 +6603,6 @@ BR	11349	Lasiurus ebenus	DD
 BR	11350	Lasiurus ega	LC
 BR	11351	Lasiurus egregius	DD
 BR	88151061	Lasiurus salinae	DD
-BR	11966	Lichonycteris obscura	LC
 BR	12078	Lionycteris spurrelli	LC
 BR	12263	Lonchophylla bokermanni	EN
 BR	12264	Lonchophylla dekeyseri	EN
@@ -6621,10 +6622,9 @@ BR	13378	Micronycteris hirsuta	LC
 BR	13379	Micronycteris megalotis	LC
 BR	136424	Micronycteris microtis	LC
 BR	13380	Micronycteris minuta	LC
-BR	40029	Micronycteris sanborni	DD
+BR	40029	Micronycteris sanborni	LC
 BR	13383	Micronycteris schmidtorum	LC
 BR	13559	Mimon bennettii	LC
-BR	13560	Mimon crenulatum	LC
 BR	13640	Molossops mattogrossensis	LC
 BR	13641	Molossops neglectus	DD
 BR	13643	Molossops temminckii	LC
@@ -6681,7 +6681,7 @@ BR	19805	Saccopteryx canescens	LC
 BR	19806	Saccopteryx gymnura	DD
 BR	19807	Saccopteryx leptura	LC
 BR	20033	Scleronycteris ega	DD
-BR	20599	Sphaeronycteris toxophyllum	DD
+BR	20599	Sphaeronycteris toxophyllum	LC
 BR	88159688	Sturnira lilium	LC
 BR	20956	Sturnira magna	LC
 BR	20960	Sturnira tildae	LC
@@ -6720,6 +6720,7 @@ CO	1137	Ametrida centurio	LC
 CO	88109476	Anoura cadenai	DD
 CO	88108473	Anoura caudifer	LC
 CO	1566	Anoura cultrata	LC
+CO	136239	Anoura fistulata	DD
 CO	88109511	Anoura geoffroyi	LC
 CO	1568	Anoura latidens	LC
 CO	1569	Anoura luismanueli	LC
@@ -6736,7 +6737,7 @@ CO	3905	Carollia perspicillata	LC
 CO	136350	Centronycteris centralis	LC
 CO	4112	Centronycteris maximiliani	LC
 CO	4133	Centurio senex	LC
-CO	14359	Chilonatalus micropus	NT
+CO	88088852	Chilonatalus micropus	VU
 CO	4666	Chiroderma salvini	LC
 CO	4667	Chiroderma trinitatum	LC
 CO	4668	Chiroderma villosum	LC
@@ -6767,14 +6768,16 @@ CO	136524	Eptesicus chiriquinus	LC
 CO	7928	Eptesicus fuscus	LC
 CO	8241	Eumops auripendulus	LC
 CO	8243	Eumops dabbenei	LC
+CO	87993965	Eumops delticus	DD
 CO	87994083	Eumops glaucinus	LC
 CO	8245	Eumops hansae	LC
 CO	87994060	Eumops nanus	LC
 CO	8247	Eumops perotis	LC
 CO	136809	Eumops trumbulli	LC
 CO	8771	Furipterus horrens	LC
+CO	13560	Gardnerycteris crenulatum	LC
 CO	9273	Glossophaga commissarisi	LC
-CO	9275	Glossophaga longirostris	DD
+CO	9275	Glossophaga longirostris	LC
 CO	9277	Glossophaga soricina	LC
 CO	13377	Glyphonycteris daviesi	LC
 CO	13384	Glyphonycteris sylvestris	LC
@@ -6785,10 +6788,13 @@ CO	88151055	Lasiurus blossevillii	LC
 CO	11345	Lasiurus cinereus	LC
 CO	11350	Lasiurus ega	LC
 CO	11699	Leptonycteris curasoae	VU
-CO	11966	Lichonycteris obscura	LC
+CO	88120245	Lichonycteris obscura	LC
 CO	12078	Lionycteris spurrelli	LC
+CO	88149262	Lonchophylla cadenai	DD
 CO	136348	Lonchophylla chocoana	DD
 CO	136706	Lonchophylla concava	LC
+CO	12265	Lonchophylla handleyi	LC
+CO	88149229	Lonchophylla pattoni	DD
 CO	12268	Lonchophylla robusta	LC
 CO	12269	Lonchophylla thomasi	LC
 CO	12270	Lonchorhina aurita	LC
@@ -6807,7 +6813,6 @@ CO	13380	Micronycteris minuta	LC
 CO	13383	Micronycteris schmidtorum	LC
 CO	13559	Mimon bennettii	LC
 CO	136561	Mimon cozumelae	LC
-CO	13560	Mimon crenulatum	LC
 CO	13640	Molossops mattogrossensis	LC
 CO	13641	Molossops neglectus	DD
 CO	13643	Molossops temminckii	LC
@@ -6869,7 +6874,7 @@ CO	136420	Saccopteryx antioquensis	EN
 CO	19804	Saccopteryx bilineata	LC
 CO	19805	Saccopteryx canescens	LC
 CO	19807	Saccopteryx leptura	LC
-CO	20599	Sphaeronycteris toxophyllum	DD
+CO	20599	Sphaeronycteris toxophyllum	LC
 CO	20949	Sturnira aratathomasi	LC
 CO	20950	Sturnira bidens	LC
 CO	20951	Sturnira bogotensis	LC
@@ -6942,19 +6947,24 @@ EC	8246	Eumops maurus	DD
 EC	8247	Eumops perotis	LC
 EC	87993523	Eumops wilsoni	DD
 EC	8771	Furipterus horrens	LC
+EC	13560	Gardnerycteris crenulatum	LC
 EC	9273	Glossophaga commissarisi	LC
 EC	13377	Glyphonycteris daviesi	LC
+EC	13384	Glyphonycteris sylvestris	LC
 EC	10202	Histiotus montanus	LC
+EC	13376	Lampronycteris brachyotis	LC
 EC	88151055	Lasiurus blossevillii	LC
 EC	11345	Lasiurus cinereus	LC
 EC	11350	Lasiurus ega	LC
-EC	11966	Lichonycteris obscura	LC
+EC	88120245	Lichonycteris obscura	LC
 EC	12078	Lionycteris spurrelli	LC
+EC	88149262	Lonchophylla cadenai	DD
 EC	136348	Lonchophylla chocoana	DD
 EC	136706	Lonchophylla concava	LC
 EC	12265	Lonchophylla handleyi	LC
 EC	12266	Lonchophylla hesperia	NT
 EC	136735	Lonchophylla orcesi	DD
+EC	88149229	Lonchophylla pattoni	DD
 EC	12268	Lonchophylla robusta	LC
 EC	12269	Lonchophylla thomasi	LC
 EC	12270	Lonchorhina aurita	LC
@@ -6968,7 +6978,6 @@ EC	88120398	Micronycteris giovanniae	DD
 EC	13378	Micronycteris hirsuta	LC
 EC	13379	Micronycteris megalotis	LC
 EC	13380	Micronycteris minuta	LC
-EC	13560	Mimon crenulatum	LC
 EC	13638	Molossops aequatorianus	EN
 EC	13643	Molossops temminckii	LC
 EC	88087507	Molossus bondae	LC
@@ -7021,7 +7030,7 @@ EC	19714	Rhynchonycteris naso	LC
 EC	19804	Saccopteryx bilineata	LC
 EC	19805	Saccopteryx canescens	LC
 EC	19807	Saccopteryx leptura	LC
-EC	20599	Sphaeronycteris toxophyllum	DD
+EC	20599	Sphaeronycteris toxophyllum	LC
 EC	20949	Sturnira aratathomasi	LC
 EC	20950	Sturnira bidens	LC
 EC	20951	Sturnira bogotensis	LC
@@ -7373,6 +7382,8 @@ MX	1790	Antrozous pallidus	LC
 MX	2131	Artibeus hirsutus	LC
 MX	88109731	Artibeus jamaicensis	LC
 MX	2136	Artibeus lituratus	LC
+MX	19679	Baeodon alleni	LC
+MX	19681	Baeodon gracilis	LC
 MX	2532	Balantiopteryx io	VU
 MX	2533	Balantiopteryx plicata	LC
 MX	1789	Bauerus dubiaquercus	NT
@@ -7407,6 +7418,7 @@ MX	8245	Eumops hansae	LC
 MX	87994060	Eumops nanus	LC
 MX	8247	Eumops perotis	LC
 MX	8248	Eumops underwoodi	LC
+MX	13560	Gardnerycteris crenulatum	LC
 MX	9273	Glossophaga commissarisi	LC
 MX	9274	Glossophaga leachii	LC
 MX	9276	Glossophaga morenoi	LC
@@ -7424,7 +7436,7 @@ MX	11352	Lasiurus intermedius	LC
 MX	41532	Lasiurus xanthinus	LC
 MX	11697	Leptonycteris nivalis	EN
 MX	136659	Leptonycteris yerbabuenae	NT
-MX	11966	Lichonycteris obscura	LC
+MX	88120245	Lichonycteris obscura	LC
 MX	12270	Lonchorhina aurita	LC
 MX	21984	Lophostoma brasiliense	LC
 MX	21986	Lophostoma evotis	LC
@@ -7434,7 +7446,6 @@ MX	12653	Macrotus waterhousii	LC
 MX	136424	Micronycteris microtis	LC
 MX	13383	Micronycteris schmidtorum	LC
 MX	136561	Mimon cozumelae	LC
-MX	13560	Mimon crenulatum	LC
 MX	88087329	Molossus alvarezi	DD
 MX	13645	Molossus aztecus	LC
 MX	102208365	Molossus coibensis	LC
@@ -7453,7 +7464,6 @@ MX	14157	Myotis evotis	LC
 MX	14159	Myotis findleyi	EN
 MX	14161	Myotis fortidens	LC
 MX	14170	Myotis keaysi	LC
-MX	14176	Myotis lucifugus	LC
 MX	136784	Myotis melanorhinus	LC
 MX	14185	Myotis nigricans	LC
 MX	136650	Myotis occultus	LC
@@ -7473,12 +7483,12 @@ MX	14993	Nyctinomops aurispinosus	LC
 MX	14994	Nyctinomops femorosaccus	LC
 MX	14995	Nyctinomops laticaudatus	LC
 MX	14996	Nyctinomops macrotis	LC
+MX	17366	Perimyotis subflavus	VU
 MX	16707	Peropteryx kappleri	LC
 MX	16709	Peropteryx macrotis	LC
 MX	17168	Phylloderma stenops	LC
 MX	17216	Phyllostomus discolor	LC
 MX	17341	Pipistrellus hesperus	LC
-MX	17366	Pipistrellus subflavus	LC
 MX	88159886	Platyrrhinus helleri	LC
 MX	18340	Promops centralis	LC
 MX	18705	Pteronotus davyi	LC
@@ -7486,10 +7496,8 @@ MX	18706	Pteronotus gymnonotus	LC
 MX	88018392	Pteronotus mesoamericanus	LC
 MX	18709	Pteronotus personatus	LC
 MX	136810	Rhogeessa aeneus	LC
-MX	19679	Rhogeessa alleni	LC
 MX	88151726	Rhogeessa bickhami	LC
 MX	19680	Rhogeessa genowaysi	EN
-MX	19681	Rhogeessa gracilis	LC
 MX	19683	Rhogeessa mira	VU
 MX	19684	Rhogeessa parvula	LC
 MX	19685	Rhogeessa tumida	LC
@@ -7511,6 +7519,7 @@ CR	1566	Anoura cultrata	LC
 CR	88109511	Anoura geoffroyi	LC
 CR	2136	Artibeus lituratus	LC
 CR	2533	Balantiopteryx plicata	LC
+CR	1789	Bauerus dubiaquercus	NT
 CR	88110411	Carollia castanea	LC
 CR	3905	Carollia perspicillata	LC
 CR	136268	Carollia sowelli	LC
@@ -7541,6 +7550,7 @@ CR	8241	Eumops auripendulus	LC
 CR	8245	Eumops hansae	LC
 CR	8248	Eumops underwoodi	LC
 CR	8771	Furipterus horrens	LC
+CR	13560	Gardnerycteris crenulatum	LC
 CR	9273	Glossophaga commissarisi	LC
 CR	9274	Glossophaga leachii	LC
 CR	9277	Glossophaga soricina	LC
@@ -7552,7 +7562,7 @@ CR	88151055	Lasiurus blossevillii	LC
 CR	11348	Lasiurus castaneus	DD
 CR	11350	Lasiurus ega	LC
 CR	11352	Lasiurus intermedius	LC
-CR	11966	Lichonycteris obscura	LC
+CR	88120245	Lichonycteris obscura	LC
 CR	136706	Lonchophylla concava	LC
 CR	12268	Lonchophylla robusta	LC
 CR	12270	Lonchorhina aurita	LC
@@ -7565,7 +7575,6 @@ CR	136424	Micronycteris microtis	LC
 CR	13380	Micronycteris minuta	LC
 CR	13383	Micronycteris schmidtorum	LC
 CR	136561	Mimon cozumelae	LC
-CR	13560	Mimon crenulatum	LC
 CR	88087507	Molossus bondae	LC
 CR	102208365	Molossus coibensis	LC
 CR	13648	Molossus molossus	LC
@@ -7644,6 +7653,7 @@ HN	8241	Eumops auripendulus	LC
 HN	8245	Eumops hansae	LC
 HN	87994060	Eumops nanus	LC
 HN	8248	Eumops underwoodi	LC
+HN	13560	Gardnerycteris crenulatum	LC
 HN	9273	Glossophaga commissarisi	LC
 HN	9274	Glossophaga leachii	LC
 HN	9277	Glossophaga soricina	LC
@@ -7654,7 +7664,7 @@ HN	88151055	Lasiurus blossevillii	LC
 HN	11350	Lasiurus ega	LC
 HN	11352	Lasiurus intermedius	LC
 HN	136659	Leptonycteris yerbabuenae	NT
-HN	11966	Lichonycteris obscura	LC
+HN	88120245	Lichonycteris obscura	LC
 HN	12270	Lonchorhina aurita	LC
 HN	21984	Lophostoma brasiliense	LC
 HN	21986	Lophostoma evotis	LC
@@ -7665,7 +7675,6 @@ HN	136424	Micronycteris microtis	LC
 HN	13380	Micronycteris minuta	LC
 HN	13383	Micronycteris schmidtorum	LC
 HN	136561	Mimon cozumelae	LC
-HN	13560	Mimon crenulatum	LC
 HN	88087507	Molossus bondae	LC
 HN	102208365	Molossus coibensis	LC
 HN	13644	Molossus rufus	LC
@@ -7681,12 +7690,12 @@ HN	136363	Natalus mexicanus	LC
 HN	14829	Noctilio albiventris	LC
 HN	14830	Noctilio leporinus	LC
 HN	14995	Nyctinomops laticaudatus	LC
+HN	17366	Perimyotis subflavus	VU
 HN	16707	Peropteryx kappleri	LC
 HN	16709	Peropteryx macrotis	LC
 HN	17168	Phylloderma stenops	LC
 HN	17216	Phyllostomus discolor	LC
 HN	17218	Phyllostomus hastatus	LC
-HN	17366	Pipistrellus subflavus	LC
 HN	88159886	Platyrrhinus helleri	LC
 HN	18340	Promops centralis	LC
 HN	18705	Pteronotus davyi	LC
@@ -7742,6 +7751,7 @@ NI	8241	Eumops auripendulus	LC
 NI	87994060	Eumops nanus	LC
 NI	8248	Eumops underwoodi	LC
 NI	8771	Furipterus horrens	LC
+NI	13560	Gardnerycteris crenulatum	LC
 NI	9273	Glossophaga commissarisi	LC
 NI	9274	Glossophaga leachii	LC
 NI	9277	Glossophaga soricina	LC
@@ -7750,7 +7760,7 @@ NI	10598	Hylonycteris underwoodi	LC
 NI	13376	Lampronycteris brachyotis	LC
 NI	88151055	Lasiurus blossevillii	LC
 NI	11350	Lasiurus ega	LC
-NI	11966	Lichonycteris obscura	LC
+NI	88120245	Lichonycteris obscura	LC
 NI	12268	Lonchophylla robusta	LC
 NI	12270	Lonchorhina aurita	LC
 NI	21984	Lophostoma brasiliense	LC
@@ -7762,7 +7772,6 @@ NI	136424	Micronycteris microtis	LC
 NI	13380	Micronycteris minuta	LC
 NI	13383	Micronycteris schmidtorum	LC
 NI	136561	Mimon cozumelae	LC
-NI	13560	Mimon crenulatum	LC
 NI	88087507	Molossus bondae	LC
 NI	102208365	Molossus coibensis	LC
 NI	13648	Molossus molossus	LC
@@ -8054,15 +8063,15 @@ CA	14150	Myotis californicus	LC
 CA	14153	Myotis ciliolabrum	LC
 CA	14157	Myotis evotis	LC
 CA	14171	Myotis keenii	LC
-CA	14172	Myotis leibii	LC
-CA	14176	Myotis lucifugus	LC
+CA	14172	Myotis leibii	EN
+CA	14176	Myotis lucifugus	EN
 CA	136784	Myotis melanorhinus	LC
-CA	14201	Myotis septentrionalis	LC
+CA	14201	Myotis septentrionalis	NT
 CA	14206	Myotis thysanodes	LC
 CA	14210	Myotis volans	LC
 CA	14213	Myotis yumanensis	LC
 CA	14996	Nyctinomops macrotis	LC
-CA	17366	Pipistrellus subflavus	LC
+CA	17366	Perimyotis subflavus	VU
 US	1790	Antrozous pallidus	LC
 US	4776	Choeronycteris mexicana	NT
 US	17600	Corynorhinus rafinesquii	LC
@@ -8093,13 +8102,13 @@ US	14147	Myotis austroriparius	LC
 US	14150	Myotis californicus	LC
 US	14153	Myotis ciliolabrum	LC
 US	14157	Myotis evotis	LC
-US	14132	Myotis grisescens	NT
+US	14132	Myotis grisescens	VU
 US	14171	Myotis keenii	LC
-US	14172	Myotis leibii	LC
-US	14176	Myotis lucifugus	LC
+US	14172	Myotis leibii	EN
+US	14176	Myotis lucifugus	EN
 US	136784	Myotis melanorhinus	LC
 US	136650	Myotis occultus	LC
-US	14201	Myotis septentrionalis	LC
+US	14201	Myotis septentrionalis	NT
 US	14136	Myotis sodalis	NT
 US	14206	Myotis thysanodes	LC
 US	14208	Myotis velifer	LC
@@ -8108,11 +8117,12 @@ US	14213	Myotis yumanensis	LC
 US	14944	Nycticeius humeralis	LC
 US	14994	Nyctinomops femorosaccus	LC
 US	14996	Nyctinomops macrotis	LC
+US	17366	Perimyotis subflavus	VU
 US	17341	Pipistrellus hesperus	LC
-US	17366	Pipistrellus subflavus	LC
 US	21314	Tadarida brasiliensis	LC
 BO	88108473	Anoura caudifer	LC
 BO	1566	Anoura cultrata	LC
+BO	136239	Anoura fistulata	DD
 BO	88109511	Anoura geoffroyi	LC
 BO	2125	Artibeus concolor	LC
 BO	2136	Artibeus lituratus	LC
@@ -8148,18 +8158,18 @@ BO	8245	Eumops hansae	LC
 BO	136825	Eumops patagonicus	LC
 BO	8247	Eumops perotis	LC
 BO	136809	Eumops trumbulli	LC
+BO	13560	Gardnerycteris crenulatum	LC
 BO	9277	Glossophaga soricina	LC
 BO	13377	Glyphonycteris daviesi	LC
-BO	13384	Glyphonycteris sylvestris	LC
 BO	136502	Histiotus laephotis	NT
 BO	10202	Histiotus montanus	LC
 BO	10203	Histiotus velatus	DD
 BO	88151055	Lasiurus blossevillii	LC
 BO	11345	Lasiurus cinereus	LC
 BO	11350	Lasiurus ega	LC
-BO	11966	Lichonycteris obscura	LC
 BO	12078	Lionycteris spurrelli	LC
 BO	12264	Lonchophylla dekeyseri	EN
+BO	88149229	Lonchophylla pattoni	DD
 BO	12269	Lonchophylla thomasi	LC
 BO	12270	Lonchorhina aurita	LC
 BO	21984	Lophostoma brasiliense	LC
@@ -8172,7 +8182,6 @@ BO	136424	Micronycteris microtis	LC
 BO	13380	Micronycteris minuta	LC
 BO	13383	Micronycteris schmidtorum	LC
 BO	88132568	Micronycteris yatesi	DD
-BO	13560	Mimon crenulatum	LC
 BO	13643	Molossops temminckii	LC
 BO	13644	Molossus rufus	LC
 BO	14140	Myotis albescens	LC
@@ -8211,7 +8220,7 @@ BO	88151760	Rhogeessa io	LC
 BO	19714	Rhynchonycteris naso	LC
 BO	19804	Saccopteryx bilineata	LC
 BO	19807	Saccopteryx leptura	LC
-BO	20599	Sphaeronycteris toxophyllum	DD
+BO	20599	Sphaeronycteris toxophyllum	LC
 BO	20952	Sturnira erythromos	LC
 BO	88159688	Sturnira lilium	LC
 BO	20956	Sturnira magna	LC
@@ -8230,18 +8239,20 @@ BO	136671	Vampyressa thyone	LC
 BO	22837	Vampyriscus bidens	LC
 BO	88151904	Vampyrodes caraccioli	LC
 BO	22843	Vampyrum spectrum	NT
-CW	9275	Glossophaga longirostris	DD
+CW	9275	Glossophaga longirostris	LC
 CW	11699	Leptonycteris curasoae	VU
 CW	13648	Molossus molossus	LC
 CW	14184	Myotis nesopolus	LC
 CW	14362	Natalus tumidirostris	LC
+SX	13719	Monophyllus plethodon	LC
 SX	14830	Noctilio leporinus	LC
 SX	21314	Tadarida brasiliensis	LC
 BQ	1137	Ametrida centurio	LC
 BQ	2089	Ardops nichollsi	LC
-BQ	9275	Glossophaga longirostris	DD
+BQ	9275	Glossophaga longirostris	LC
 BQ	11699	Leptonycteris curasoae	VU
 BQ	13648	Molossus molossus	LC
+BQ	13719	Monophyllus plethodon	LC
 BQ	14184	Myotis nesopolus	LC
 BQ	14362	Natalus tumidirostris	LC
 BQ	21314	Tadarida brasiliensis	LC
@@ -8348,7 +8359,8 @@ VE	8246	Eumops maurus	DD
 VE	87994060	Eumops nanus	LC
 VE	136809	Eumops trumbulli	LC
 VE	8771	Furipterus horrens	LC
-VE	9275	Glossophaga longirostris	DD
+VE	13560	Gardnerycteris crenulatum	LC
+VE	9275	Glossophaga longirostris	LC
 VE	9277	Glossophaga soricina	LC
 VE	13377	Glyphonycteris daviesi	LC
 VE	13384	Glyphonycteris sylvestris	LC
@@ -8359,7 +8371,6 @@ VE	29607	Lasiurus atratus	LC
 VE	88151055	Lasiurus blossevillii	LC
 VE	11345	Lasiurus cinereus	LC
 VE	11699	Leptonycteris curasoae	VU
-VE	11966	Lichonycteris obscura	LC
 VE	12078	Lionycteris spurrelli	LC
 VE	12268	Lonchophylla robusta	LC
 VE	12269	Lonchophylla thomasi	LC
@@ -8377,7 +8388,6 @@ VE	136424	Micronycteris microtis	LC
 VE	13380	Micronycteris minuta	LC
 VE	13383	Micronycteris schmidtorum	LC
 VE	13559	Mimon bennettii	LC
-VE	13560	Mimon crenulatum	LC
 VE	13640	Molossops mattogrossensis	LC
 VE	13641	Molossops neglectus	DD
 VE	13643	Molossops temminckii	LC
@@ -8432,7 +8442,7 @@ VE	19804	Saccopteryx bilineata	LC
 VE	19805	Saccopteryx canescens	LC
 VE	19807	Saccopteryx leptura	LC
 VE	20033	Scleronycteris ega	DD
-VE	20599	Sphaeronycteris toxophyllum	DD
+VE	20599	Sphaeronycteris toxophyllum	LC
 VE	20949	Sturnira aratathomasi	LC
 VE	20950	Sturnira bidens	LC
 VE	20951	Sturnira bogotensis	LC

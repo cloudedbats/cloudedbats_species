@@ -500,7 +500,7 @@ class IucnRedlist(object):
 if __name__ == "__main__":
     """ """
 
-    token = '<TOKEN>', # Replace with your token.
+    token = '<TOKEN>' # Replace with your token.
 
     redlist = IucnRedlist(api_token=token, 
                           debug = True)
@@ -510,15 +510,12 @@ if __name__ == "__main__":
         # belongs to Chiroptera.
         redlist.get_all()
         redlist.save_all()
-    else:
-        # Load from cache if token not given.
-        redlist.load_all()
 
-
-    redlist.save_all()
-    
+    # Load from cache if token not given.
+    redlist.clear()
+    redlist.load_all()
 
     redlist.create_excel()
     
-    print(redlist.redlist_citation())
+    print('Done. ', redlist.redlist_citation())
     
