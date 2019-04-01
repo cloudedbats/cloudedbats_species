@@ -12,7 +12,7 @@ The main usage for taxa4bats is to serve cloudedbats_desktop_app and cloudedbats
 
 But the Excel file can be used directly. It's really good if you want to check the species list for a specific country, just use the filter function in Excel and search for 'SE' in the countries column get the species list for Sweden. If you don't use Excel the free alternative "LibreOffice calc" can be used.
 
-Download the Excel file here: [redlist_chiroptera_2019-1.xlsx](/taxa4bats/redlist_chiroptera_2018-2.xlsx) 
+Download the Excel file here: [redlist_chiroptera_2019-1.xlsx](/taxa4bats/redlist_chiroptera_2019-1.xlsx) 
 
 ![WURB-A001](CloudedBats_IUCN-Redlist_Excel.png?raw=true  "Swedish species filtered in LibreOffice Calc.")
 Swedish species filtered in LibreOffice Calc. CloudedBats.org / [CC-BY](https://creativecommons.org/licenses/by/3.0/)
