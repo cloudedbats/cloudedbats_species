@@ -28,7 +28,7 @@ BJ	Benin
 BL	Saint Barthélemy
 BM	Bermuda
 BN	Brunei Darussalam
-BO	Bolivia, Plurinational States of
+BO	Bolivia, Plurinational State of
 BQ	Bonaire, Sint Eustatius and Saba
 BR	Brazil
 BS	Bahamas
@@ -73,7 +73,7 @@ ET	Ethiopia
 FI	Finland
 FJ	Fiji
 FK	Falkland Islands (Malvinas)
-FM	Micronesia, Federated States of
+FM	Micronesia, Federated States of 
 FO	Faroe Islands
 FR	France
 GA	Gabon
@@ -144,7 +144,7 @@ ME	Montenegro
 MF	Saint Martin (French part)
 MG	Madagascar
 MH	Marshall Islands
-MK	Macedonia, the former Yugoslav Republic of
+MK	North Macedonia
 ML	Mali
 MM	Myanmar
 MN	Mongolia
