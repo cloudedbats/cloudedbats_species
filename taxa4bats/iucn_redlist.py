@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
 # Project: http://cloudedbats.org
-# Copyright (c) 2018 Arnold Andreasson 
+# Copyright (c) 2018-present Arnold Andreasson 
 # License: MIT License (see LICENSE.txt or http://opensource.org/licenses/mit).
 
 import pathlib 
@@ -96,26 +96,26 @@ class IucnRedlist(object):
             'category',
             ]
     
-    def redlist_version(self):
+    def get_redlist_version(self):
         """ """ 
         return self.version
     
-    def redlist_citation(self):
+    def get_redlist_citation(self):
         """ """ 
         citation_string = 'IUCN <YEAR>. IUCN Red List of Threatened Species. Version <VERSION> <www.iucnredlist.org>'
         citation_string = citation_string.replace('<YEAR>', self.version[0:4])
         citation_string = citation_string.replace('<VERSION>', self.version)
         return citation_string
     
-    def chiroptera_info(self):
+    def get_chiroptera_info_dict(self):
         """ """ 
         return self.chiroptera_info_dict
     
-    def country_dict(self):
+    def get_country_dict(self):
         """ """ 
         return self.country_dict
     
-    def chiroptera_by_country_list(self):
+    def get_chiroptera_by_country_list(self):
         """ """
         return self.chiroptera_by_country_list
     
@@ -351,7 +351,7 @@ class IucnRedlist(object):
     def create_excel(self, dirpath='.'):
         """ Export to Excel. """
         #
-        excel_filepathname = pathlib.Path(dirpath, 'redlist_chiroptera_' + self.redlist_version() + '.xlsx') 
+        excel_filepathname = pathlib.Path(dirpath, 'redlist_chiroptera_' + self.get_redlist_version() + '.xlsx') 
         # Create Excel document.
         workbook = xlsxwriter.Workbook(str(excel_filepathname))
         
@@ -436,7 +436,7 @@ class IucnRedlist(object):
             [''],
             ['IUCN Redlist citation:'],
             [''],
-            ['    ' + self.redlist_citation()],
+            ['    ' + self.get_redlist_citation()],
             [''],
             ]
         #
@@ -509,13 +509,13 @@ if __name__ == "__main__":
         # since all taxa must be checked to find out if they
         # belongs to Chiroptera.
         redlist.get_all()
-        redlist.save_all()
+        redlist.save_all(dirpath='taxa4bats/data')
 
     # Load from cache if token not given.
     redlist.clear()
-    redlist.load_all()
+    redlist.load_all(dirpath='taxa4bats/data')
 
     redlist.create_excel()
     
-    print('Done. ', redlist.redlist_citation())
+    print('Done. ', redlist.get_redlist_citation())
     
