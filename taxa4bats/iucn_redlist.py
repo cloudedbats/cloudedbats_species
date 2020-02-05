@@ -119,20 +119,20 @@ class IucnRedlist(object):
         """ """
         return self.chiroptera_by_country_list
 
-    def get_all(self):
+    def get_all_from_api(self):
         """ """
         if not self.api_token:
             return
         #
-        self.get_version()
+        self.rest_get_version()
         #
-        self.get_chiroptera_species()
+        self.rest_get_chiroptera_species()
         #
-        self.get_chiroptera_info()
+        self.rest_get_chiroptera_info()
         #
-        self.get_countries()
+        self.rest_get_countries()
         #
-        self.get_chiroptera_by_country()
+        self.rest_get_chiroptera_by_country()
 
     def save_all(self, dirpath="data"):
         """ """
@@ -230,7 +230,7 @@ class IucnRedlist(object):
                     if len(parts) > 1:
                         self.chiroptera_by_country_list.append(parts)
 
-    def get_version(self):
+    def rest_get_version(self):
         """ Get IUCN version. """
         if not self.api_token:
             return
@@ -245,7 +245,7 @@ class IucnRedlist(object):
         if self.debug:
             print("DEBUG: version: " + str(self.version))
 
-    def get_chiroptera_species(self):
+    def rest_get_chiroptera_species(self):
         """ Get IUCN species list and store species where order = Chiroptera. """
         if not self.api_token:
             return
@@ -296,7 +296,7 @@ class IucnRedlist(object):
         if self.debug:
             print("DEBUG: Chiroptera total count: " + str(self.chiroptera_count))
 
-    def get_chiroptera_info(self):
+    def rest_get_chiroptera_info(self):
         """ Iterate over countries and store Chiroptera species for each country. """
         if not self.api_token:
             return
@@ -320,7 +320,7 @@ class IucnRedlist(object):
                         if self.debug:
                             print("DEBUG: Get info: " + scientific_name)
 
-    def get_countries(self):
+    def rest_get_countries(self):
         """ Get IUCN list of countries. """
         if not self.api_token:
             return
@@ -340,7 +340,7 @@ class IucnRedlist(object):
                         self.country_count += 1
                         self.country_dict[row_dict["isocode"]] = row_dict["country"]
 
-    def get_chiroptera_by_country(self):
+    def rest_get_chiroptera_by_country(self):
         """ Iterate over countries and store Chiroptera species for each country. """
         if not self.api_token:
             return
@@ -539,7 +539,7 @@ if __name__ == "__main__":
         # Update from IUCN Red list. This will take some time
         # since all taxa must be checked to find out if they
         # belongs to Chiroptera.
-        redlist.get_all()
+        redlist.get_all_from_api()
         redlist.save_all(dirpath="taxa4bats/data")
 
     # Load from cache if token not given.

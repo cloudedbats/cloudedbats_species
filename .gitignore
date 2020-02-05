@@ -1,6 +1,9 @@
 
 venv
 
+# VSCode
+**/.vscode
+
 # Eclipse.
 **/.settings
 **/.metadata
@@ -8,3 +11,6 @@ venv
 **/.pydevproject
 # Visual studio code.
 **/settings.json
+
+# Mac.
+**/.DS_Store
