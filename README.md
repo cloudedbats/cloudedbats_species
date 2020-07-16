@@ -10,7 +10,7 @@ When running the Python script [/taxa4bats/iucn_redlist.py](/taxa4bats/iucn_redl
 
 But the Excel file can be used directly. It's really useful if you want to check the species list for a specific country, just use the filter function in Excel and search for 'SE' in the countries column get the species list for Sweden. If you don't use Excel the free alternative "LibreOffice calc" can be used.
 
-Download the Excel file here: [redlist_chiroptera_2019-3.xlsx](redlist_chiroptera_2019-3.xlsx) 
+Download the Excel file here: [redlist_chiroptera_2020-2.xlsx](redlist_chiroptera_2020-2.xlsx) 
 
 ![WURB-A001](CloudedBats_IUCN-Redlist_Excel.png?raw=true  "Swedish species filtered in LibreOffice Calc.")
 Swedish species filtered in LibreOffice Calc. CloudedBats.org / [CC-BY](https://creativecommons.org/licenses/by/3.0/)
